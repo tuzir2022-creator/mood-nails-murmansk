@@ -3,54 +3,114 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mood · Студия маникюра</title>
+<meta name="description" content="Выберите услугу и посмотрите цену из прайса студии перед записью.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Дизайн ногтей под ваше настроение">
+<meta property="og:description" content="Выберите услугу и посмотрите цену из прайса студии перед записью.">
+<meta property="og:image" content="assets/polish.webp">
+<link rel="preload" as="image" href="assets/polish.webp" fetchpriority="high">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%275%27 fill=%27%2334313a%27/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/tenor-sans-400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/onest-400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face { font-family: "Onest"; font-style: normal; font-weight: 400; font-display: swap; src: url("assets/fonts/onest-400-cyrillic.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Onest"; font-style: normal; font-weight: 400; font-display: swap; src: url("assets/fonts/onest-400-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Onest"; font-style: normal; font-weight: 500; font-display: swap; src: url("assets/fonts/onest-500-cyrillic.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Onest"; font-style: normal; font-weight: 500; font-display: swap; src: url("assets/fonts/onest-500-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Onest"; font-style: normal; font-weight: 600; font-display: swap; src: url("assets/fonts/onest-600-cyrillic.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Onest"; font-style: normal; font-weight: 600; font-display: swap; src: url("assets/fonts/onest-600-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Tenor Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("assets/fonts/tenor-sans-400-cyrillic.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Tenor Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("assets/fonts/tenor-sans-400-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+:root { --c-canvas: #f3e7e4; --c-surface: #fbf6f4; --c-ink: #2b292e; --c-ink-soft: #645b62; --c-accent: #34313a; --c-accent-ink: #f8f0ee; --c-accent-deep: #8c4b55; --f-display: "Tenor Sans", "Georgia", serif; --f-text: "Onest", "Segoe UI", system-ui, sans-serif; --h1k: 1; }
+</style>
+<link rel="stylesheet" href="style-prod.css">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Ногтевая студия Mood на Кольском проспекте. Посмотрите варианты маникюра, покрытия и дизайна. Демонстрационный макет.">
-<title>Mood · Демонстрационный макет</title>
-<link rel="stylesheet" href="assets/layout.css">
-<script src="assets/booking.js" defer></script>
+<link rel="stylesheet" href="studio.css">
 </head>
-<body data-layout="dark" style="--bg:#2a2028;--surface:#352834;--ink:#fff1f3;--muted:#e0c7d5;--accent:#f4add2;--button:#f4add2;--button-ink:#32192a">
-<a class="skip" href="#main">К содержанию</a>
-<div class="notice"><div class="wrap">Демонстрационный макет</div></div>
-<header class="header"><div class="wrap header-row">
-  <a class="brand" href="#main">Mood</a>
-  <nav class="nav" aria-label="Разделы страницы"><a href="#services">Услуги</a><a href="#contacts">Связь</a><button class="button" type="button" data-book="">Записаться</button></nav>
-</div></header>
-<main id="main">
-  <section class="wrap hero" aria-labelledby="hero-title">
-    <div>
-      <p class="label">Ногтевой сервис · Мурманск</p>
-      <h1 id="hero-title">Дизайн ногтей под ваше настроение</h1>
-      <p class="lead">Ногтевая студия Mood на&nbsp;Кольском проспекте. Посмотрите варианты маникюра, покрытия и&nbsp;дизайна.</p>
-      <a class="rating" href="https://yandex.ru/maps/org/204948213798/reviews/" rel="noreferrer"><span class="stars" aria-hidden="true">★</span><span>5,0 · Отзывы на Яндекс Картах (56)</span></a>
-      <div class="actions"><button class="button" type="button" data-book="">Записаться</button><a class="button secondary" href="#services">Посмотреть услуги</a></div>
+<body class="s-prod" id="top">
+<header class="s-bar" data-s-bar>
+  <a class="s-bar__brand" href="#top"><i aria-hidden="true"></i>Mood</a>
+  <div class="s-bar__right">
+    <span class="s-demo-label">Демонстрационный макет</span>
+    <a class="s-btn s-btn--sm" href="#widget">Выбрать услугу</a>
+  </div>
+</header>
+<main>
+  <section class="s-hero">
+    <div class="s-hero__text">
+      <p class="s-eyebrow">Студия маникюра · Мурманск</p>
+      <h1>Дизайн ногтей под ваше настроение</h1>
+      <p class="s-lead">Выберите услугу и посмотрите цену из прайса студии перед записью.</p>
+      <ul class="s-ticks"><li>Онлайн-запись в карточке студии</li></ul>
+      <p class="s-rating"><a href="https://yandex.ru/maps/org/204948213798/reviews/"><b>5,0</b> на Яндекс.Картах · 56 отзывов</a></p>
+      <figure class="s-hero__photo"><img class="" src="assets/polish.webp" alt="Разноцветное покрытие и флаконы лака" loading="lazy" decoding="async"><figcaption>Стоковая фотография · Son Tung Tran / Pexels</figcaption></figure>
     </div>
-    <figure class="hero-media"><img src="assets/hero.webp" alt="Оранжевый маникюр на жёлтом фоне" fetchpriority="high"><figcaption>Иллюстрация · <a href="https://www.pexels.com/photo/11124899/" rel="noreferrer">Anna Shvets, Pexels</a></figcaption></figure>
+    <div class="s-hero__widget" id="widget"><div class="s-widget" data-studio-booking>
+      <h2 class="s-widget__title">Запись в студию</h2>
+      <fieldset><legend>Услуга</legend>
+        <div class="s-chips s-chips--col"><label class="s-chip s-chip--row"><input type="radio" name="svc" value="0" data-name="Педикюр &quot;Только пальчики&quot; с покрытием" data-price="3000" data-from="" data-min="" checked><span>Педикюр "Только пальчики" с покрытием</span><b>3 000 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="1" data-name="Педикюр «Всё включено»" data-price="3300" data-from="" data-min=""><span>Педикюр «Всё включено»</span><b>3 300 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="2" data-name="Педикюр «Всё включено» без покрытия" data-price="3000" data-from="" data-min=""><span>Педикюр «Всё включено» без покрытия</span><b>3 000 ₽</b></label></div>
+      </fieldset>
+  <p class="s-total"><span>Цена по прайсу</span><b data-price-output>3 000 ₽</b></p>
+  <a class="s-btn s-btn--wide" href="https://yandex.ru/maps/org/204948213798/">Открыть карточку для записи</a>
+  <p class="s-widget-note">Свободное время уточняйте в студии. Выбор услуги на этой странице не создаёт запись.</p>
+  </div></div>
+    <figure class="s-hero__bg" aria-hidden="true"><img class="" src="assets/polish.webp" alt="Разноцветное покрытие и флаконы лака" decoding="async" fetchpriority="high"></figure>
   </section>
-  <section class="services" id="services" aria-labelledby="services-title"><div class="wrap">
-    <div class="section-heading"><h2 id="services-title">Услуги и цены</h2><p>Цены из карточки на Яндекс Картах. Актуальную стоимость уточняйте при записи.</p></div>
-    <ul class="service-list"><li class="service"><h3>Педикюр &quot;Только пальчики&quot; с&nbsp;покрытием</h3><span class="price">3000 ₽</span><button class="button secondary" type="button" data-book="Педикюр &quot;Только пальчики&quot; с покрытием">Выбрать</button></li>
-<li class="service"><h3>Педикюр «Всё включено»</h3><span class="price">3300 ₽</span><button class="button secondary" type="button" data-book="Педикюр «Всё включено»">Выбрать</button></li>
-<li class="service"><h3>Педикюр «Всё включено» без&nbsp;покрытия</h3><span class="price">3000 ₽</span><button class="button secondary" type="button" data-book="Педикюр «Всё включено» без покрытия">Выбрать</button></li></ul>
-  </div></section>
-  <section class="wrap feature" aria-labelledby="review-title">
-    <figure><img src="assets/detail.webp" alt="Разноцветное покрытие и флаконы лака" loading="lazy"><figcaption>Иллюстрация · <a href="https://www.pexels.com/photo/6429663/" rel="noreferrer">Son Tung Tran, Pexels</a></figcaption></figure>
-    <div><h2 id="review-title">Отзыв о студии</h2><blockquote>«сделали дизайн в&nbsp;точности как я&nbsp;захотела»</blockquote><a class="review-source" href="https://yandex.ru/maps/org/204948213798/reviews/" rel="noreferrer">Читать отзывы на Яндекс Картах</a></div>
+
+  
+
+  <section class="s-section s-reveal" id="prices">
+    <header class="s-section__head"><h2>Услуги и цены</h2><p>Позиции из прайса на Яндекс Картах.</p></header>
+    <div class="s-board"><div class="s-board__group">
+      
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Педикюр "Только пальчики" с покрытием</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">3 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Педикюр «Всё включено»</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">3 300 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Педикюр «Всё включено» без покрытия</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">3 000 ₽</span></li>
+      </ul>
+    </div></div>
+    <p class="s-note">Актуальную стоимость и свободное время уточняйте в студии.</p>
   </section>
-  <section class="contacts" id="contacts" aria-labelledby="contacts-title"><div class="wrap">
-    <h2 id="contacts-title">Как записаться</h2>
-    <p>Откройте карточку студии на Яндекс Картах и выберите онлайн-запись. Там же указаны адрес и часы работы.</p>
-    <ul class="channels" aria-label="Каналы связи в карточке"><li>ВК</li></ul>
-    <div class="actions"><a class="button" href="https://yandex.ru/maps/org/204948213798/" rel="noreferrer">Открыть карточку студии</a></div>
-  </div></section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Как записаться</h2></header>
+    <ol class="s-steps">
+      <li class="s-steps__item"><span class="s-steps__n">01</span><h3>Выберите услугу</h3><p>В карточке выше появится название и цена из прайса.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">02</span><h3>Откройте карточку студии</h3><p>В ней указаны часы работы и контакты.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">03</span><h3>Уточните время</h3><p>В карточке студии доступна онлайн-запись.</p></li>
+    </ol>
+  </section>
+
+  <section class="s-photos s-reveal" aria-label="Фото"><figure><img class="" src="assets/orange.webp" alt="Оранжевый маникюр на жёлтом фоне" loading="lazy" decoding="async"><figcaption>Стоковая фотография · Anna Shvets / Pexels</figcaption></figure><figure><img class="" src="assets/red-fabric.webp" alt="Маникюр на фоне красной ткани" loading="lazy" decoding="async"><figcaption>Стоковая фотография · Zulfugar Karimov / Pexels</figcaption></figure><figure><img class="" src="assets/hero.webp" alt="Мастер наносит прозрачное покрытие" loading="lazy" decoding="async" style="object-position:50% 48%"><figcaption>Стоковая фотография · Kaboompics / Pexels</figcaption></figure></section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Полезное перед визитом</h2></header>
+    <ul class="s-promises">
+      <li><h3>Стоимость</h3><p>Если хотите уточнить детали услуги, спросите о них при записи.</p></li>
+      <li><h3>Как добраться</h3><p>Маршрут до студии можно построить в Яндекс Картах.</p></li>
+    </ul>
+  </section>
+
+  
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Частые вопросы</h2></header>
+    <div class="s-faq"><details><summary>Как уточнить актуальную стоимость?</summary><p>Откройте карточку студии и уточните цену выбранной услуги при записи.</p></details><details><summary>Как узнать, есть ли свободное время?</summary><p>Откройте карточку студии на Яндекс Картах и воспользуйтесь указанным там каналом связи.</p></details></div>
+  </section>
+
+  <section class="s-section s-reveal"><header class="s-section__head"><h2>Отзыв о студии</h2></header>
+  <ul class="s-reviews"><li><p>«сделали дизайн в точности как я захотела»</p><a href="https://yandex.ru/maps/org/204948213798/reviews/">Яндекс Карты</a></li></ul></section>
+  <section class="s-section s-final s-reveal" id="contacts">
+    <header class="s-section__head"><h2>Контакты студии</h2></header>
+    <div class="s-contacts">
+    <dl><div><dt>Город</dt><dd>Мурманск</dd></div><div><dt>Связь</dt><dd>ВК · в карточке студии</dd></div></dl>
+    <div class="s-contacts__actions"><a class="s-btn" href="https://yandex.ru/maps/org/204948213798/">Открыть Яндекс Карты</a></div>
+  </div>
+  </section>
 </main>
-<footer class="footer"><div class="wrap footer-row"><p>Демонстрационный макет, не является официальным сайтом организации.</p><a href="https://yandex.ru/maps/org/204948213798/" rel="noreferrer">Источник данных · Яндекс Карты</a></div></footer>
-<dialog id="booking" aria-labelledby="booking-title">
-  <button class="close" type="button" data-close aria-label="Закрыть">×</button>
-  <h2 id="booking-title">Запись в студию</h2>
-  <p class="choice" data-selection></p>
-  <p class="selection-description">Вы смотрите демонстрационный макет. Для записи воспользуйтесь контактами в карточке студии.</p>
-  <div class="dialog-actions"><a class="button" href="https://yandex.ru/maps/org/204948213798/" rel="noreferrer">Открыть Яндекс Карты</a></div>
-</dialog>
+<footer class="s-foot"><p>Mood · Мурманск</p><p>Демонстрационный макет, не является официальным сайтом организации.</p></footer>
+<nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Выбрать услугу</a><a class="s-btn s-btn--ghost" href="https://yandex.ru/maps/org/204948213798/">Контакты</a></nav>
+<script src="style.js" defer></script>
+<script src="studio.js" defer></script>
 </body>
 </html>
